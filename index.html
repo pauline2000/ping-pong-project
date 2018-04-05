@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,37 +8,61 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Ping-Pong</title>
+    <style>
+        li {list-style-position: inside;}
+    </style>
 </head>
 
 <body>
-        <div class="container-fluid">
-                <header class="jumbotron">
-                 <h2>Let's play!</h2>
-                </header>
-        
-            <h3>Rules</h3>
-        <p>Ping Pong will count up to your number from 1 with the following exceptions:</p>
-        <ol>
-            <li>Numbers divisible by 3 become 'ping'</li>
-            <li>Numbers divisible by 5 become 'pong'</li>
-            <li>Numbers divisible by 3 and 5 become 'pingpong'</li>
-        </ol>
-        <form id="form-group">
-               
-                 
-                <label for="">Enter your number here</label>
-                <input id="anyNumber"  type="number">
-                <button type=submit class="btn">Ping Pong</button>    
-                     
-      </form>
-      <ul id="output">
+    <div class="container">
+        <img src="images/pingpong2.jpg" alt="pingpong" style="width:100%;height:100%;">
+        <div class="centered" style="color:purple;">Let's Play</div>
 
-      </ul>
-      
+    
+
+    <h3 style="text-align:center;color:white;">Rules</h3>
+    <p style="text-align:center;color:white;">Ping Pong will count up to your number from 1 with the following exceptions:</p>
+    <!-- <div class="ol">  -->
+    <ol style="color:white;">
+        <li style="text-align: center">Numbers divisible by 3 become 'ping'</li>
+        <li style="text-align: center">Numbers divisible by 5 become 'pong'</li>
+        <li style="text-align: center" >Numbers divisible by 3 and 5 become<br> 'pingpong'</li>
+        
+    </ol >
+   
+
+
+    <form id="form-group">
+    <label for="" style="text-align:center;color:white;">Enter your number here</label>
+    <input id="anyNumber" type="number">
+    <button type=submit class="btn">Ping Pong</button>
+
+    </form>
+    <ul id="output">
+
+    </ul>
+
+
+    </div>
+    <div class="footer">
+        <h2>About Ping Pong</h2>
+        <h2>Created by:</h2>
+        <h3>Pauline Ndung'u</h3>
+        </div>
+        
+        <div class="github-section">
+            <h2>GitHub Username:</h2> 
+            <h3>pauline2000</h3>
+        </div>
+       <div class="test-section">
+        <h2>Level 2 Test for:</h2>
+        <h3>Javascript</h3>
+       </div>
        
-       
-</div>
-<script src="js/jquery.js"></script>
-<script src="js/scripts.js"></script>
+<h6 style="text-align:center;color:white;">&copy;Sherry Designs 2018</h6> 
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>

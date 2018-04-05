@@ -1,13 +1,13 @@
 var pingy=[];   
 function test(num){
     for (i=1; i<=num; i++) {
-        if(i%3===0) {
+        if((i%3===0 && i%5===0)) {
             pingy.push("pingpong");
 
-        } else if (i%5===0){
+        } else if (i%3===0){
             pingy.push("ping");
 
-        } else if((i%3===0 && i%5===0)) {
+        } else if(i%5===0 ) {
             pingy.push("pong")
         }
       else {
@@ -26,7 +26,8 @@ $(document).ready(function(){
 
        pingy.forEach(function(p){
         $("#output").append($("<li>").html(p));
-       });
+      
         
 })
+});
 });
